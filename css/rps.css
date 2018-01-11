@@ -1,0 +1,36 @@
+.scoreboard {
+    background-color: #dc3545; 
+    color: #fff;
+    text-align: center;
+    font-family: 'Orbitron', sans-serif;
+    padding: 3rem;
+}
+.welcome {
+    padding-bottom: 20px;
+}
+.scores {
+    font-family: 'Russo One', sans-serif;   
+}
+#user-score,
+#computer-score {
+    font-size: 48px;
+}
+#game-over {
+    font-family: 'Orbitron', sans-serif;
+}
+.btn-div {
+    justify-content: center;
+}
+.btn-style button {
+    font-family: 'Orbitron', sans-serif;
+    width: 150px;
+}
+#reset button {
+    font-size: 36px;
+    width: 300px;
+}
+#victory-gif,
+#rpsls-gif {
+    text-align: center;
+    margin: 5px auto;
+}

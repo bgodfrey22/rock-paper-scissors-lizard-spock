@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Rock Paper Scissors</title>
+
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/css/bootstrap.min.css" integrity="sha384-PsH8R72JQ3SOdhVi3uxftmaW6Vc51MKb0q5P2rRUpPvrszuE4W1povHYgTpBfshb" crossorigin="anonymous">
+    <link href="css/rps.css" rel="stylesheet" type="text/css">
+    <link href="https://fonts.googleapis.com/css?family=Orbitron|Russo+One" rel="stylesheet">
+    <script src="https://use.fontawesome.com/aa23584a00.js"></script>
+    
+</head>
+<body>
+    
+    <div class="container-fluid">
+        <div class="jumbotron scoreboard">
+            <div class="row welcome">
+                <div id="welcome" class="col-md-12">
+                    <h3>Welcome to</h3>
+                    <h1><strong>ROCK, PAPER, SCISSORS, LIZARD, SPOCK</strong></h1>
+                </div>
+                <div id="game-over" class="col-md-12">
+                    <h1><strong>GAME OVER!</strong></h1>
+                </div>
+            </div>
+            <div class="row justify-content-center scores">
+                <div class="col-md-4">
+                    <h2>Player</h2>
+                    <h1 id="user-score">0</h1>
+                </div>
+                <div class="col-md-4">
+                    <h2>Computer</h2>
+                    <h1 id="computer-score">0</h1>
+                </div>
+            </div>
+        </div>
+
+        <div id="button" class="row btn-div">
+            <div id="button" class="col-md-2 btn-style">
+                <button onclick="playRound('rock'); hideWelcome();" class="btn btn-default btn-lg" style="border: 1px solid #000;"><i class="fa fa-hand-rock-o fa-4x"></i> </br> ROCK</button>
+            </div>
+            <div id="button" class="col-md-2 btn-style">
+                <button onclick="playRound('paper'); hideWelcome();" class="btn btn-danger btn-lg"><i class="fa fa-hand-paper-o fa-4x"></i> </br> PAPER</button>
+            </div>
+            <div id="button" class="col-md-2 btn-style">
+                <button onclick="playRound('scissors'); hideWelcome();" class="btn btn-primary btn-lg"><i class="fa fa-hand-scissors-o fa-4x"></i> </br> SCISSORS</button>
+            </div>
+            <div id="button" class="col-md-2 btn-style">
+                <button onclick="playRound('lizard'); hideWelcome();" class="btn btn-success btn-lg"><i class="fa fa-hand-lizard-o fa-4x"></i> </br> LIZARD</button>
+            </div>
+            <div id="button" class="col-md-2 btn-style">
+                <button onclick="playRound('spock'); hideWelcome();" class="btn btn-warning btn-lg"><i class="fa fa-hand-spock-o fa-4x"></i> </br> SPOCK</button>
+            </div>
+        </div>
+
+        <div id="reset" class="row btn-div">
+            <button onclick="restart()" class="btn btn-default btn-lg" style="border: 1px solid #000;"> RESET </button>
+        </div>
+        <div id="victory-gif" class="row btn-div">
+            <img src="https://media.giphy.com/media/K3RxMSrERT8iI/giphy.gif" />
+        </div>
+        <div id="rpsls-gif" class="row btn-div">
+            <img src="https://media.giphy.com/media/swTbdYziUJ8u4/giphy.gif" />
+        </div>
+        
+        <br/><br/><br/>
+
+        <div class="row">
+            <div class="col-md-12">
+                <table class="table">
+                    <thead class="thead-dark">
+                        <tr>
+                            <th>Round Number</th>
+                            <th>Player</th>
+                            <th>Computer</th>
+                            <th>Description</th>
+                            <th>Result</th>
+                        </tr>
+                    </thead>
+                    <tbody id="game-log">
+                    </tbody>
+                </table>
+            </div>
+        </div>
+    </div>
+
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.3/umd/popper.min.js" integrity="sha384-vFJXuSJphROIrBnz7yo7oB41mKfc8JzQZiCq4NCceLEaO4IHwicKwpJf9c9IpFgh" crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/js/bootstrap.min.js" integrity="sha384-alpBpkh1PFOepccYVYDB4do5UnbKysX5WZXm3XxPqe5iKTfUKjNkCk9SaVuEZflJ" crossorigin="anonymous"></script>
+    <script src="js/rpsls.js"></script>
+</body>
+</html>
